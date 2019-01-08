@@ -4,7 +4,7 @@ email: stefano@poglianis.net
 description: >
   NodeRED dominodb Documentation.
 
-baseurl: "/node-red-contrib-dominodb-docs" # the subpath of your site, e.g. /blog/
+baseurl: "/think2019lab-domino-integration" # the subpath of your site, e.g. /blog/
 url: https://github.com/icstechsales/think2019lab-domino-integration # the base hostname & protocol for your site
 git_address: https://github.com/icstechsales/think2019lab-domino-integration
 git_edit_address: https://github.com/icstechsales/think2019lab-domino-integration/tree/gh-pages
