@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116928965-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-131176103-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Introducing NodeRed</title>
+    <meta name="description" content="Node-RED (https://nodered.org/), which crisply defines itself as“Flow-based programming for the Internet of Things” is the tool thatwe have used to abstract ...">
+
+
+    <link rel="stylesheet" href="/node-red-contrib-dominodb-docs/css/main.css">
+    <link rel="stylesheet" href="/node-red-contrib-dominodb-docs/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/node-red-contrib-dominodb-docs/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Introducing NodeRed | NodeRED dominodb Documentation</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Introducing NodeRed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Node-RED (https://nodered.org/), which crisply defines itself as “Flow-based programming for the Internet of Things” is the tool that we have used to abstract the use of the standard APIs. Roughly, we encapsulated the access to the standard APIs as Node-RED nodes and we provided a simpler way to execute those APIs as part of a “flow”. Let’s see the details." />
+<meta property="og:description" content="Node-RED (https://nodered.org/), which crisply defines itself as “Flow-based programming for the Internet of Things” is the tool that we have used to abstract the use of the standard APIs. Roughly, we encapsulated the access to the standard APIs as Node-RED nodes and we provided a simpler way to execute those APIs as part of a “flow”. Let’s see the details." />
+<link rel="canonical" href="http://localhost:4000/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/" />
+<meta property="og:url" content="http://localhost:4000/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/" />
+<meta property="og:site_name" content="NodeRED dominodb Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-12-23T20:18:49+01:00" />
+<script type="application/ld+json">
+{"description":"Node-RED (https://nodered.org/), which crisply defines itself as “Flow-based programming for the Internet of Things” is the tool that we have used to abstract the use of the standard APIs. Roughly, we encapsulated the access to the standard APIs as Node-RED nodes and we provided a simpler way to execute those APIs as part of a “flow”. Let’s see the details.","@type":"WebPage","url":"http://localhost:4000/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/","headline":"Introducing NodeRed","dateModified":"2018-12-23T20:18:49+01:00","datePublished":"2018-12-23T20:18:49+01:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/">
+    <link rel="alternate" type="application/rss+xml" title="NodeRED dominodb Documentation" href="http://localhost:4000/node-red-contrib-dominodb-docs/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="color: #FEC70B; background-color: black" href="/node-red-contrib-dominodb-docs/">
+                <!-- <span><img src="/node-red-contrib-dominodb-docs/img/ibmpos_black.jpg"></span> -->
+                NodeRED dominodb Documentation
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">Programming Guide</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/article-Intro/">Launch Article</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/envSetup/">Environment Setup</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+        
+            <ul class="nav navbar-nav">
+                <li><a href="https://github.com/stefanopog/node-red-contrib-dominodb/issues" target="_blank">Report Issues</a></li>
+            </ul>
+            
+            
+            <div class="navbar-right">
+                <!-- <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form> -->
+                <!-- <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/stefanopog/node-red-contrib-dominodb-docs"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-1">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+          Programming Guide
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-1">
+          Programming Guide
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">A new set of APIs</a>
+        
+          
+          
+          <a class="list-group-item active" href="/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/">Introducing NodeRed</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-Details/">Details of the dominodb Node-RED package</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ConfigurationNode/">The Configuration Node (dominodb)</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-DocumentMgrNode/">DocumentMgr node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-GetDocumentsNode/">Get Documents Node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-CreateDocumentsNode/">Create Documents node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ReplaceDocumentsNode/">Replace Documents / Items node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-DeleteDocumentsNode/">Delete Documents / Items node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ExplainQueryNode/">Explain Query Node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ErrorHandling/">Error Handling</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-TechnicalDetails/">Technical Details</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-2">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          Launch Article
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-2">
+          Launch Article
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-Intro/">A new set of APIs</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-NodeRed/">The Domino 10 Node-RED nodes</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-sample/">The new domino-db Node-RED nodes in action</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-3">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Environment Setup
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-3">
+          Environment Setup
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/envSetup/">Environment Setup</a>
+        
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+        <div class="col-md-10">
+            
+
+
+
+
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Details/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+            <hr>
+            <h1>Introducing NodeRed</h1>
+            <div id="markdown-content-container"><p>Node-RED (https://nodered.org/), which crisply defines itself as
+“<em>Flow-based programming for the Internet of Things</em>” is the tool that
+we have used to abstract the use of the standard APIs.<br />
+Roughly, we encapsulated the access to the standard APIs as Node-RED
+nodes and we provided a simpler way to execute those APIs as part of a
+“flow”.<br />
+Let’s see the details.</p>
+
+<h3 id="the-domino-10-node-red-nodes">The Domino 10 Node-RED nodes</h3>
+
+<p>The <strong>node-red-contrib-dominodb</strong> Node-RED package
+(https://flows.nodered.org/node/node-red-contrib-dominodb) provides the
+following nodes:</p>
+
+<p><img src="../images/fullDocumentation/image2.png" alt="" /></p>
+
+<p>Each node, by selecting an instance of the <strong>dominodb node</strong> (see
+<a href="#the-configuration-node-dominodb">here</a>), implements all the code (and
+error management) to properly connect to a Domino Server and to a
+selected Domino database; you, as the creator of the flow, simply need
+to select the right instance of the <strong>dominodb node</strong> on which to act
+upon.</p>
+
+<p>Most of the nodes encapsulate the use of more than one APIs, thus
+allowing you to select which functional operation to execute instead
+than spending your time in understanding which API (and which
+parameters) to use.</p>
+
+<p>The list of available nodes is shown under the <strong>Domino 10 Category</strong> on
+the left palette of the Node-RED editor, as shown here:</p>
+
+<p><img src="../images/fullDocumentation/image3.png" alt="" /></p>
+</div>
+            <!-- <p class="text-center">
+              <br />
+              <a target="_blank" href="https://github.com/stefanopog/node-red-contrib-dominodb-docs/tree/gh-pages/_docs/fullDocumentation/fullDoc-IntroNodeRed.md" class="btn btn-default githubEditButton" role="button">
+                <i class="fa fa-pencil fa-lg"></i> Improve this page
+              </a>
+            </p> -->
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Details/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            NodeRED dominodb Documentation 2018 
+            <!-- | -->
+            <!-- Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a> -->
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/node-red-contrib-dominodb-docs'
+</script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/node-red-contrib-dominodb-docs/js/bootstrap.min.js "></script>
+<script src="/node-red-contrib-dominodb-docs/js/typeahead.bundle.min.js "></script>
+<script src="/node-red-contrib-dominodb-docs/js/clipboard.min.js "></script>
+
+<script src="/node-red-contrib-dominodb-docs/js/main.js "></script>
+
+</body>
+
+</html>

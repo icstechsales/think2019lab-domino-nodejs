@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116928965-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-131176103-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lab Setup</title>
+    <meta name="description" content="PrerequisitesWe’ll assume some familiarity with HTML, CSS, and JavaScript, but you should be able to follow along even if you haven’t used them before. Howev...">
+
+
+    <link rel="stylesheet" href="/node-red-contrib-dominodb-docs/css/main.css">
+    <link rel="stylesheet" href="/node-red-contrib-dominodb-docs/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/node-red-contrib-dominodb-docs/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Lab Setup | NodeRED dominodb Documentation</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Lab Setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Prerequisites We’ll assume some familiarity with HTML, CSS, and JavaScript, but you should be able to follow along even if you haven’t used them before. However, you may not know why we did certain things the way we did." />
+<meta property="og:description" content="Prerequisites We’ll assume some familiarity with HTML, CSS, and JavaScript, but you should be able to follow along even if you haven’t used them before. However, you may not know why we did certain things the way we did." />
+<link rel="canonical" href="http://localhost:4000/node-red-contrib-dominodb-docs/docs/home/" />
+<meta property="og:url" content="http://localhost:4000/node-red-contrib-dominodb-docs/docs/home/" />
+<meta property="og:site_name" content="NodeRED dominodb Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-12-23T20:18:49+01:00" />
+<script type="application/ld+json">
+{"description":"Prerequisites We’ll assume some familiarity with HTML, CSS, and JavaScript, but you should be able to follow along even if you haven’t used them before. However, you may not know why we did certain things the way we did.","@type":"WebPage","url":"http://localhost:4000/node-red-contrib-dominodb-docs/docs/home/","headline":"Lab Setup","dateModified":"2018-12-23T20:18:49+01:00","datePublished":"2018-12-23T20:18:49+01:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/node-red-contrib-dominodb-docs/docs/home/">
+    <link rel="alternate" type="application/rss+xml" title="NodeRED dominodb Documentation" href="http://localhost:4000/node-red-contrib-dominodb-docs/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="color: #FEC70B; background-color: black" href="/node-red-contrib-dominodb-docs/">
+                <!-- <span><img src="/node-red-contrib-dominodb-docs/img/ibmpos_black.jpg"></span> -->
+                NodeRED dominodb Documentation
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">Programming Guide</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/article-Intro/">Launch Article</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/envSetup/">Environment Setup</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+        
+            <ul class="nav navbar-nav">
+                <li><a href="https://github.com/stefanopog/node-red-contrib-dominodb/issues" target="_blank">Report Issues</a></li>
+            </ul>
+            
+            
+            <div class="navbar-right">
+                <!-- <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form> -->
+                <!-- <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/stefanopog/node-red-contrib-dominodb-docs"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-1">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+          Programming Guide
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-1">
+          Programming Guide
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">A new set of APIs</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/">Introducing NodeRed</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-Details/">Details of the dominodb Node-RED package</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ConfigurationNode/">The Configuration Node (dominodb)</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-DocumentMgrNode/">DocumentMgr node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-GetDocumentsNode/">Get Documents Node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-CreateDocumentsNode/">Create Documents node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ReplaceDocumentsNode/">Replace Documents / Items node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-DeleteDocumentsNode/">Delete Documents / Items node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ExplainQueryNode/">Explain Query Node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ErrorHandling/">Error Handling</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-TechnicalDetails/">Technical Details</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-2">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          Launch Article
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-2">
+          Launch Article
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-Intro/">A new set of APIs</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-NodeRed/">The Domino 10 Node-RED nodes</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-sample/">The new domino-db Node-RED nodes in action</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-3">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Environment Setup
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-3">
+          Environment Setup
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/envSetup/">Environment Setup</a>
+        
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+        <div class="col-md-10">
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+            <hr>
+            <h1>Lab Setup</h1>
+            <div id="markdown-content-container"><h3 id="prerequisites">Prerequisites</h3>
+<p>We’ll assume some familiarity with HTML, CSS, and JavaScript, but you should be able to follow along even if you haven’t used them before. However, you may not know why we did certain things the way we did.</p>
+
+<h3 id="what-we-will-be-doing">What we will be doing</h3>
+<p>In this lab, we will start by exploring a HelloWorld custom widget to understand how widgets are registered in ICEC. We will then build four (4) custom widgets to access various external content we want to surface in IBM Connections Engagement Center.</p>
+
+<p>The lab instructions are very specific to the tools we used as we built the lab. However, these are not requirements for building widgets for ICEC! You can use a text editor to write your code. Popular and free solutions are Notepad++, Atom, TextMate and Visual Studio Code. You are free to follow this lab using the development tools you are most comfortable with.</p>
+
+<ul>
+  <li>IDE: Visual Studio Code
+    <ul>
+      <li>Why: I find it to be the best Code Editor that is “Free”</li>
+      <li><a href="https://code.visualstudio.com/">Download Visual Studio Code</a></li>
+      <li><a href="https://code.visualstudio.com/docs/getstarted/introvideos">Getting Started Videos</a></li>
+    </ul>
+  </li>
+  <li>Browser: Chrome
+    <ul>
+      <li>Why: Chrome provides the ‘best’ Dev Tools and receives updates frequently, when debugging an issue I find it to be invaluable.</li>
+      <li><a href="https://www.google.com/chrome/">Download Google Chrome</a></li>
+      <li><a href="https://developers.google.com/web/updates/2018/01/devtools">Getting to Know Chrome DevTools</a></li>
+    </ul>
+  </li>
+  <li>Development Server: Node.js
+    <ul>
+      <li>Why: It is easier to have the running code of your widgets local and not have to constantly deploy to the ICEC server during development.</li>
+      <li><a href="https://nodejs.org/en/">Download the latest LTS Version</a></li>
+      <li><a href="http://nodesource.com/blog/installing-nodejs-tutorial-windows/">Windows Installation</a></li>
+      <li><a href="http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x">Mac OS Installation</a></li>
+      <li><a href="http://nodesource.com/blog/installing-node-js-tutorial-debian-linux">Debian Linux Installation</a></li>
+      <li><a href="http://nodesource.com/blog/installing-node-js-tutorial-ubuntu">Ubuntu Linux Installation</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>All these tools installation are straightforward, take the defaults during installation and you will be all set.</p>
+
+<ul>
+  <li>Code version control: It is also a good practice is to use Git for version control. There are a number of options you can choose from.  For this lab, we will be using Github to download our starter code, but don’t worry about having an account on Github unless you want to save the code that you create.
+    <ul>
+      <li><a href="https://help.github.com/">Github Guides</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="launch-visual-studio-code-or-your-favorite-ide">Launch Visual Studio Code (or your favorite IDE)</h3>
+<p>For this walkthrough we are using Visual Studio Code, a free to download/use IDE available for Mac, Windows, and Linux. Click on the icon to open it.<br />
+<img src="../images/vsc.png" alt="Visual Studio Code" /></p>
+
+<h4 id="integrated-terminal">Integrated Terminal</h4>
+
+<p>VS Code has an <strong>integrated terminal</strong> which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command line tools.</p>
+
+<p><img src="../images/vsterm.png" alt="integrated terminal" /></p>
+
+<p><strong>View</strong> &gt; <strong>Integrated Terminal</strong> will open the integrated terminal and you can run commands throughout the lab, i.e. <code class="highlighter-rouge">npm install</code>, <code class="highlighter-rouge">npm run build</code>, etc… from there:</p>
+
+<p>For this lab, we will open up two terminal sessions, using the + on the right-hand side:</p>
+<ul>
+  <li>one for the server where our widgets will be served from during our development</li>
+  <li>one to build and package our custom widget code after every iteration.</li>
+</ul>
+
+</div>
+            <!-- <p class="text-center">
+              <br />
+              <a target="_blank" href="https://github.com/stefanopog/node-red-contrib-dominodb-docs/tree/gh-pages/_docs/index.md" class="btn btn-default githubEditButton" role="button">
+                <i class="fa fa-pencil fa-lg"></i> Improve this page
+              </a>
+            </p> -->
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            NodeRED dominodb Documentation 2018 
+            <!-- | -->
+            <!-- Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a> -->
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/node-red-contrib-dominodb-docs'
+</script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/node-red-contrib-dominodb-docs/js/bootstrap.min.js "></script>
+<script src="/node-red-contrib-dominodb-docs/js/typeahead.bundle.min.js "></script>
+<script src="/node-red-contrib-dominodb-docs/js/clipboard.min.js "></script>
+
+<script src="/node-red-contrib-dominodb-docs/js/main.js "></script>
+
+</body>
+
+</html>

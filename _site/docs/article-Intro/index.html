@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116928965-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-131176103-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A new set of APIs</title>
+    <meta name="description" content="One of the important news happening with the Domino 10 launch is the possibility to use the NodeJS programming model to interact with theDomino 10 runtime. A...">
+
+
+    <link rel="stylesheet" href="/node-red-contrib-dominodb-docs/css/main.css">
+    <link rel="stylesheet" href="/node-red-contrib-dominodb-docs/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/node-red-contrib-dominodb-docs/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>A new set of APIs | NodeRED dominodb Documentation</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="A new set of APIs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="One of the important news happening with the Domino 10 launch is the possibility to use the NodeJS programming model to interact with the Domino 10 runtime. As part of this evolution, our partner HCL has published the “App Dev Pack”, which is the server-side component that allows a Domino 10 installation to support a new set of APIs and the new Domino Query Language and the “domino-db NPM” component, which provides a NodeJS package that allows NodeJS developers to simply and easily create applications that make use of the features exposed by the “App Dev Pack”." />
+<meta property="og:description" content="One of the important news happening with the Domino 10 launch is the possibility to use the NodeJS programming model to interact with the Domino 10 runtime. As part of this evolution, our partner HCL has published the “App Dev Pack”, which is the server-side component that allows a Domino 10 installation to support a new set of APIs and the new Domino Query Language and the “domino-db NPM” component, which provides a NodeJS package that allows NodeJS developers to simply and easily create applications that make use of the features exposed by the “App Dev Pack”." />
+<link rel="canonical" href="http://localhost:4000/node-red-contrib-dominodb-docs/docs/article-Intro/" />
+<meta property="og:url" content="http://localhost:4000/node-red-contrib-dominodb-docs/docs/article-Intro/" />
+<meta property="og:site_name" content="NodeRED dominodb Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-12-23T20:18:49+01:00" />
+<script type="application/ld+json">
+{"description":"One of the important news happening with the Domino 10 launch is the possibility to use the NodeJS programming model to interact with the Domino 10 runtime. As part of this evolution, our partner HCL has published the “App Dev Pack”, which is the server-side component that allows a Domino 10 installation to support a new set of APIs and the new Domino Query Language and the “domino-db NPM” component, which provides a NodeJS package that allows NodeJS developers to simply and easily create applications that make use of the features exposed by the “App Dev Pack”.","@type":"WebPage","url":"http://localhost:4000/node-red-contrib-dominodb-docs/docs/article-Intro/","headline":"A new set of APIs","dateModified":"2018-12-23T20:18:49+01:00","datePublished":"2018-12-23T20:18:49+01:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/node-red-contrib-dominodb-docs/docs/article-Intro/">
+    <link rel="alternate" type="application/rss+xml" title="NodeRED dominodb Documentation" href="http://localhost:4000/node-red-contrib-dominodb-docs/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="color: #FEC70B; background-color: black" href="/node-red-contrib-dominodb-docs/">
+                <!-- <span><img src="/node-red-contrib-dominodb-docs/img/ibmpos_black.jpg"></span> -->
+                NodeRED dominodb Documentation
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">Programming Guide</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/article-Intro/">Launch Article</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/node-red-contrib-dominodb-docs/docs/envSetup/">Environment Setup</a></li>
+                <!-- <li ><a href="/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+            </ul>
+        
+            <ul class="nav navbar-nav">
+                <li><a href="https://github.com/stefanopog/node-red-contrib-dominodb/issues" target="_blank">Report Issues</a></li>
+            </ul>
+            
+            
+            <div class="navbar-right">
+                <!-- <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form> -->
+                <!-- <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/stefanopog/node-red-contrib-dominodb-docs"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-1">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+          Programming Guide
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-1">
+          Programming Guide
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/">A new set of APIs</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/">Introducing NodeRed</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-Details/">Details of the dominodb Node-RED package</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ConfigurationNode/">The Configuration Node (dominodb)</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-DocumentMgrNode/">DocumentMgr node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-GetDocumentsNode/">Get Documents Node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-CreateDocumentsNode/">Create Documents node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ReplaceDocumentsNode/">Replace Documents / Items node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-DeleteDocumentsNode/">Delete Documents / Items node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ExplainQueryNode/">Explain Query Node</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-ErrorHandling/">Error Handling</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/fullDoc-TechnicalDetails/">Technical Details</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-2">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          Launch Article
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-2">
+          Launch Article
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item active" href="/node-red-contrib-dominodb-docs/docs/article-Intro/">A new set of APIs</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-NodeRed/">The Domino 10 Node-RED nodes</a>
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/article-sample/">The new domino-db Node-RED nodes in action</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" style="color: #FEC70B; background-color: black" id="ph-3">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Environment Setup
+        </a>
+        <!-- <a role="button" data-toggle="collapse" data-parent="#accordion" href="/node-red-contrib-dominodb-docs/docs/icec/" aria-expanded="false" aria-controls="collapse-3">
+          Environment Setup
+        </a> -->
+      </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/node-red-contrib-dominodb-docs/docs/envSetup/">Environment Setup</a>
+        
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+        <div class="col-md-10">
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/node-red-contrib-dominodb-docs/docs/fullDoc-TechnicalDetails/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/node-red-contrib-dominodb-docs/docs/article-NodeRed/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+            <hr>
+            <h1>A new set of APIs</h1>
+            <div id="markdown-content-container"><p>One of the important news happening with the Domino 10 launch is the possibility to use the NodeJS programming model to interact with the
+Domino 10 runtime. <br />
+As part of this evolution, our partner HCL has published</p>
+<ul>
+  <li>the <strong>“App Dev Pack”</strong>, which is the server-side component that allows a Domino 10 installation to support a new set of APIs and the
+new <strong>Domino Query Language</strong></li>
+  <li>and the <strong>“domino-db NPM”</strong> component, which provides a NodeJS package that allows NodeJS developers to simply and easily create
+applications that make use of the features exposed by the <strong>“App Dev Pack”</strong>.</li>
+</ul>
+
+<p>This article focuses on how a power user can, transparently, use the <strong>“domino-db NPM”</strong> component by means of the new <strong>Node-RED dominodb package</strong> (available <a href="https://flows.nodered.org/node/node-red-contrib-dominodb">here</a> and fully documented <a href="/docs/fullDoc-Intro/">here</a>).  <br />
+This new Node-RED package aims to provide a very simple and programmer-friendly abstraction for the APIs exposed by the “<strong>domino-db NPM</strong>” package in order to make it simple, even for not NodeJS experts, to create integrations with Domino 10 with <em>very little</em> or <em>no programming</em> skills.</p>
+
+<p>The APIs exposed by the <strong>“domino-db NPM”</strong> component allow to perform <strong>CRUD operations</strong> on a given Domino Database. Those APIs are described
+in the README.md and Reference.md files included in the <strong>“domino-db NPM”</strong> package. There are, roughly, 3 types of APIs:</p>
+<ul>
+  <li><strong>APIs that work on “sets” of documents.</strong><br />
+You can:
+    <ul>
+      <li>Get a set of documents specified either by a DQL Query or by a list of unique Ids</li>
+      <li>Replace a set of documents (or a set of items within the documents) specified either by a DQL Query or by a list of unique ids</li>
+      <li>Delete a set of documents (or a set of items within the documents) specified either by a DQL Query or by a list of unique ids</li>
+      <li>Create a set of documents</li>
+    </ul>
+  </li>
+  <li><strong>APIs that work on a single document.</strong> <br />
+You can Read, Replace, Delete or Create a document specified by its unique id</li>
+  <li><strong>Service APIs.</strong> <br />
+These APIs allow you to connect to a Domino Server, to select a Domino database to work with, to get information about the connection that has been established.<br />
+An interesting Service API allows the programmer to <strong>explain a DQL Query</strong> before running it. It can become extremely useful when evaluating the optimal way to query a large Domino database.</li>
+</ul>
+
+<p>The use of these APIs requires some familiarity with advanced Javascript programming (promises, the new Async features of ES6, error management
+etc).<br />
+This may quickly become an obstacle for <strong>power users</strong> or for <strong>Domino programmers</strong> who are more focused on the business logic and/or on the
+data that need to be manipulated. Here is an example of the code fragment that is required to create a single document using the new
+APIs:</p>
+
+<p><img src="../images/article/image1.png" alt="" /></p>
+</div>
+            <!-- <p class="text-center">
+              <br />
+              <a target="_blank" href="https://github.com/stefanopog/node-red-contrib-dominodb-docs/tree/gh-pages/_docs/Article/article-Intro.md" class="btn btn-default githubEditButton" role="button">
+                <i class="fa fa-pencil fa-lg"></i> Improve this page
+              </a>
+            </p> -->
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/node-red-contrib-dominodb-docs/docs/fullDoc-TechnicalDetails/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/node-red-contrib-dominodb-docs/docs/article-NodeRed/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            NodeRED dominodb Documentation 2018 
+            <!-- | -->
+            <!-- Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a> -->
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/node-red-contrib-dominodb-docs'
+</script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/node-red-contrib-dominodb-docs/js/bootstrap.min.js "></script>
+<script src="/node-red-contrib-dominodb-docs/js/typeahead.bundle.min.js "></script>
+<script src="/node-red-contrib-dominodb-docs/js/clipboard.min.js "></script>
+
+<script src="/node-red-contrib-dominodb-docs/js/main.js "></script>
+
+</body>
+
+</html>
