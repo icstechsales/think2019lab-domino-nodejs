@@ -1,0 +1,161 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+
+html body {
+  font-size: 15px;
+}
+
+@import
+  {% if site.bootwatch %}
+    "bootswatch/{{site.bootwatch | downcase}}/variables",
+  {% endif %}
+
+  "bootstrap",
+
+  {% if site.bootwatch %}
+    "bootswatch/{{site.bootwatch | downcase}}/bootswatch",
+  {% endif %}
+
+  "syntax-highlighting",
+  "typeahead"
+;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: $navbar-height + $navbar-margin-bottom;
+  margin-bottom: 46px;
+}
+
+.navbar-brand{
+  img{
+    margin: -$navbar-padding-vertical 0;
+    height: $navbar-height - 10;
+    padding: 10px 0;
+    padding-right: 50px;
+  }
+  background-color: black;
+  color: #FEC70B;
+}
+
+
+.header-container {
+  background-color: #FEC70B;
+  //background: url('../img/bg.jpg') no-repeat 50% 0;
+  //color: #fff;
+  color: black
+
+  h1 {
+    color: #fff;
+  }
+  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center 36%;
+  margin-top: -37px;
+}
+.navbar-container {
+  font-size: 16px;
+}
+.page-content {
+  padding-bottom: 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 46px;
+  padding-top: 10px;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
+
+.post-list-container {
+  li a.active {
+    font-weight: bold;
+  }
+}
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+.navbar-form .has-feedback .form-control-feedback{
+  top:10px
+}
+.benefits--svg{width:4rem;height:4rem}
+.nav{
+  padding-left: 40px; 
+}
+
+
+aside, aside code, .note, .note code {
+  background: #e1f5fe;
+  color: #0288d1;
+}
+
+aside {
+  display: block;
+  font-size: 14px;
+  margin: 16px 0;
+  padding: 12px 24px 12px 60px;
+}
+
+aside::before, .note::before {
+  color: #039be5;
+  content: 'star';
+  float: left;
+  word-wrap: normal;
+  margin-left: -36px;
+  text-rendering: optimizeLegibility;
+}
+
+//Bootstrap video modal
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.modal-body {
+  position: relative;
+}
+.modal-header {
+  text-align: center;
+}
+// .close {
+//   position:absolute;
+//   right:-30px;
+//   top:0;
+//   z-index:999;
+//   font-size:2rem;
+//   font-weight: normal;
+//   color:#fff;
+//   opacity:1;
+// }
+
+
+//second example
+.bs-example{
+  margin: 20px;
+}
+.modal-content iframe{
+    margin: 0 auto;
+    display: block;
+}
+
+.highlight {
+  max-width: 975px;
+  position: relative;
+}
+.highlight .btn {
+  position: absolute;
+  padding: 2px 6px;
+  right: 4px;
+  top: 4px;
+}
