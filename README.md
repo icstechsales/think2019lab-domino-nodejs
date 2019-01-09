@@ -1,1 +1,1 @@
-# node-red-contrib-dominodb-docs
+# Think2019lab-domino-integration

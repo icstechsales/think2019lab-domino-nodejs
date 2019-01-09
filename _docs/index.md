@@ -5,7 +5,7 @@ redirect_from: /docs/index.html
 ---
 
 ### Prerequisites
-We’ll assume some familiarity with HTML, CSS, and JavaScript, but you should be able to follow along even if you haven’t used them before. However, you may not know why we did certain things the way we did.
+We’ll assume some familiarity with HTML, CSS, JavaScript and NodeRED, but you should be able to follow along even if you haven’t used them before. However, you may not know why we did certain things the way we did.
 
 ### What we will be doing
 In this lab, we will start by exploring a HelloWorld custom widget to understand how widgets are registered in ICEC. We will then build four (4) custom widgets to access various external content we want to surface in IBM Connections Engagement Center.

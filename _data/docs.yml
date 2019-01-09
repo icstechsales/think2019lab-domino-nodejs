@@ -1,24 +1,14 @@
-- title: Programming Guide
+- title: Lab Content
   docs:
   - fullDoc-Intro
-  - fullDoc-IntroNodeRed
-  - fullDoc-Details
-  - fullDoc-ConfigurationNode
-  - fullDoc-DocumentMgrNode
-  - fullDoc-GetDocumentsNode
-  - fullDoc-CreateDocumentsNode
-  - fullDoc-ReplaceDocumentsNode
-  - fullDoc-DeleteDocumentsNode
-  - fullDoc-ExplainQueryNode
-  - fullDoc-ErrorHandling
-  - fullDoc-TechnicalDetails
 
-- title: Launch Article
+- title: Node-RED domino-db article
   docs:
   - article-Intro
   - article-NodeRed
   - article-sample
 
-- title: Environment Setup
+- title: Additional Information
   docs:
-  - envSetup
+  - info-intro
+  - appdev-pack-infos
