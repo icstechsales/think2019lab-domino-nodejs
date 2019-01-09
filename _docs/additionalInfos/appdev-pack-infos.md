@@ -1,5 +1,5 @@
 ---
-title: Additional Information
+title: The Domino 10 AppDev Pack
 permalink: /docs/appdev-pack-infos/
 ---
 

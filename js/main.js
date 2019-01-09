@@ -17,7 +17,7 @@ $(function() {
   });
 
   $("#ph-3").click(function() {
-    window.location.href = "/think2019lab-domino-integration/docs/envSetup/";
+    window.location.href = "/think2019lab-domino-integration/docs/info-intro/";
     return;
   });
 
