@@ -1,8 +1,8 @@
 # Site settings
-title: NodeRED dominodb Documentation
+title: Thin2019 7068 Session
 email: stefano@poglianis.net
 description: >
-  NodeRED dominodb Documentation.
+  Domino 10 Integration Lab.
 
 baseurl: "/think2019lab-domino-integration" # the subpath of your site, e.g. /blog/
 url: https://icstechsales.github.io/think2019lab-domino-integration # the base hostname & protocol for your site
