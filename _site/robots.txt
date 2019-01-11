@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/node-red-contrib-dominodb-docs/sitemap.xml
+Sitemap: http://localhost:4000/think2019lab-domino-nodejs/sitemap.xml

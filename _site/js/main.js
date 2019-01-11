@@ -7,17 +7,17 @@ $(function() {
 
   //DP: Trying something
   $("#ph-1").click(function() {
-    window.location.href = "/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/";
+    window.location.href = "/think2019lab-domino-integration/docs/fullDoc-Intro/";
     return;
   });
 
   $("#ph-2").click(function() {
-    window.location.href = "/node-red-contrib-dominodb-docs/docs/article-Intro/";
+    window.location.href = "/think2019lab-domino-integration/docs/article-Intro/";
     return;
   });
 
   $("#ph-3").click(function() {
-    window.location.href = "/node-red-contrib-dominodb-docs/docs/envSetup/";
+    window.location.href = "/think2019lab-domino-integration/docs/info-intro/";
     return;
   });
 

@@ -4,96 +4,8 @@
     
     
     {
-      "title": "A new set of APIs",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-Intro/"
-
-    },
-  
-    
-    
-    {
-      "title": "Introducing NodeRed",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-IntroNodeRed/"
-
-    },
-  
-    
-    
-    {
-      "title": "Details of the dominodb Node-RED package",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-Details/"
-
-    },
-  
-    
-    
-    {
-      "title": "The Configuration Node (dominodb)",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-ConfigurationNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "DocumentMgr node",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-DocumentMgrNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "Get Documents Node",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-GetDocumentsNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "Create Documents node",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-CreateDocumentsNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "Replace Documents / Items node",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-ReplaceDocumentsNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "Delete Documents / Items node",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-DeleteDocumentsNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "Explain Query Node",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-ExplainQueryNode/"
-
-    },
-  
-    
-    
-    {
-      "title": "Error Handling",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-ErrorHandling/"
-
-    },
-  
-    
-    
-    {
-      "title": "Technical Details",
-      "url": "/node-red-contrib-dominodb-docs/docs/fullDoc-TechnicalDetails/"
+      "title": "Introduction",
+      "url": "/think2019lab-domino-nodejs/docs/fullDoc-Intro/"
 
     },
   
@@ -103,7 +15,7 @@
     
     {
       "title": "A new set of APIs",
-      "url": "/node-red-contrib-dominodb-docs/docs/article-Intro/"
+      "url": "/think2019lab-domino-nodejs/docs/article-Intro/"
 
     },
   
@@ -111,7 +23,7 @@
     
     {
       "title": "The Domino 10 Node-RED nodes",
-      "url": "/node-red-contrib-dominodb-docs/docs/article-NodeRed/"
+      "url": "/think2019lab-domino-nodejs/docs/article-NodeRed/"
 
     },
   
@@ -119,7 +31,7 @@
     
     {
       "title": "The new domino-db Node-RED nodes in action",
-      "url": "/node-red-contrib-dominodb-docs/docs/article-sample/"
+      "url": "/think2019lab-domino-nodejs/docs/article-sample/"
 
     },
   
@@ -128,8 +40,16 @@
     
     
     {
-      "title": "Environment Setup",
-      "url": "/node-red-contrib-dominodb-docs/docs/envSetup/"
+      "title": "NodeRED Environment Setup",
+      "url": "/think2019lab-domino-nodejs/docs/info-intro/"
+
+    },
+  
+    
+    
+    {
+      "title": "The Domino 10 AppDev Pack",
+      "url": "/think2019lab-domino-nodejs/docs/appdev-pack-infos/"
 
     },
   
@@ -138,12 +58,12 @@
   
   {
   "title": "Jekyll Doc Theme is published!",
-  "url": "/node-red-contrib-dominodb-docs/blog/2017/05/03/jekyll-doc-theme/"
+  "url": "/think2019lab-domino-nodejs/blog/2017/05/03/jekyll-doc-theme/"
   },
   
   {
   "title": "Welcome to Jekyll!",
-  "url": "/node-red-contrib-dominodb-docs/blog/2017/02/01/welcome-to-jekyll/"
+  "url": "/think2019lab-domino-nodejs/blog/2017/02/01/welcome-to-jekyll/"
   }
   
 ]

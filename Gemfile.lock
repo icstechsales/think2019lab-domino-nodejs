@@ -70,10 +70,9 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.3.7p456
 
 BUNDLED WITH
-   1.17.2
+   2.0.1

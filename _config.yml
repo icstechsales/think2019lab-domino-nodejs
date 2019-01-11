@@ -1,13 +1,13 @@
 # Site settings
-title: Thin2019 7068 Session
-email: stefano@poglianis.net
+title: Think2019 Session 6051A
+email: dcacy@us.ibm.com
 description: >
-  Domino 10 Integration Lab.
+  Using Domino Query Language and Node.js—Domino Developers Edition!
 
-baseurl: "/think2019lab-domino-integration" # the subpath of your site, e.g. /blog/
-url: https://icstechsales.github.io/think2019lab-domino-integration # the base hostname & protocol for your site
-git_address: https://github.com/icstechsales/think2019lab-domino-integration
-git_edit_address: https://github.com/icstechsales/think2019lab-domino-integration/tree/gh-pages
+baseurl: "/think2019lab-domino-nodejs" # the subpath of your site, e.g. /blog/
+url: https://icstechsales.github.io/think2019lab-domino-nodejs # the base hostname & protocol for your site
+git_address: https://github.com/icstechsales/think2019lab-node-jsdomino
+git_edit_address: https://github.com/icstechsales/think2019lab-domino-nodejs/tree/gh-pages
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
@@ -16,7 +16,7 @@ bootwatch: paper
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
