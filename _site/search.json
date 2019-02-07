@@ -4,8 +4,24 @@
     
     
     {
-      "title": "Introduction",
-      "url": "/think2019lab-domino-nodejs/docs/fullDoc-Intro/"
+      "title": "The lab format",
+      "url": "/think2019lab-domino-nodejs/docs/01-lab-content/"
+
+    },
+  
+    
+    
+    {
+      "title": "Intro to the AppDev Pack",
+      "url": "/think2019lab-domino-nodejs/docs/02-intro-to-appdev-pack/"
+
+    },
+  
+    
+    
+    {
+      "title": "Set up your environment",
+      "url": "/think2019lab-domino-nodejs/docs/03-setup/"
 
     },
   
@@ -14,24 +30,40 @@
     
     
     {
-      "title": "A new set of APIs",
-      "url": "/think2019lab-domino-nodejs/docs/article-Intro/"
+      "title": "Step 1 - Your first app",
+      "url": "/think2019lab-domino-nodejs/docs/ex1a/"
 
     },
   
     
     
     {
-      "title": "The Domino 10 Node-RED nodes",
-      "url": "/think2019lab-domino-nodejs/docs/article-NodeRed/"
+      "title": "Step 2 - Return field values",
+      "url": "/think2019lab-domino-nodejs/docs/ex1b/"
 
     },
   
     
     
     {
-      "title": "The new domino-db Node-RED nodes in action",
-      "url": "/think2019lab-domino-nodejs/docs/article-sample/"
+      "title": "Step 3 - Modify the query",
+      "url": "/think2019lab-domino-nodejs/docs/ex1c/"
+
+    },
+  
+    
+    
+    {
+      "title": "Step 4 - Numbers",
+      "url": "/think2019lab-domino-nodejs/docs/ex1d/"
+
+    },
+  
+    
+    
+    {
+      "title": "Step 5 - Dates",
+      "url": "/think2019lab-domino-nodejs/docs/ex1e/"
 
     },
   
@@ -40,16 +72,58 @@
     
     
     {
-      "title": "NodeRED Environment Setup",
-      "url": "/think2019lab-domino-nodejs/docs/info-intro/"
+      "title": "Modifying documents",
+      "url": "/think2019lab-domino-nodejs/docs/ex2a/"
 
     },
   
     
     
     {
-      "title": "The Domino 10 AppDev Pack",
-      "url": "/think2019lab-domino-nodejs/docs/appdev-pack-infos/"
+      "title": "Step 1 - Create the query",
+      "url": "/think2019lab-domino-nodejs/docs/ex2b/"
+
+    },
+  
+    
+    
+    {
+      "title": "Step 2 - Configure the API",
+      "url": "/think2019lab-domino-nodejs/docs/ex2c/"
+
+    },
+  
+
+  
+    
+    
+    {
+      "title": "Precedence",
+      "url": "/think2019lab-domino-nodejs/docs/ex3a/"
+
+    },
+  
+    
+    
+    {
+      "title": "Step 1 - Create the query without precedence",
+      "url": "/think2019lab-domino-nodejs/docs/ex3b/"
+
+    },
+  
+    
+    
+    {
+      "title": "Step 2 - Add to the query",
+      "url": "/think2019lab-domino-nodejs/docs/ex3c/"
+
+    },
+  
+    
+    
+    {
+      "title": "Step 3 - Explain the query",
+      "url": "/think2019lab-domino-nodejs/docs/ex3d/"
 
     },
   

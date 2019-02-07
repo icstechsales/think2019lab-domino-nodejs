@@ -1,14 +1,26 @@
 - title: Lab Content
   docs:
-  - fullDoc-Intro
+  - 01-lab-content
+  - 02-intro-to-appdev-pack
+  - 03-setup
 
-- title: Node-RED domino-db article
+- title: Exercise 1
   docs:
-  - article-Intro
-  - article-NodeRed
-  - article-sample
+  - ex1a
+  - ex1b
+  - ex1c
+  - ex1d
+  - ex1e
 
-- title: Additional Information
+- title: Exercise 2
   docs:
-  - info-intro
-  - appdev-pack-infos
+  - ex2a
+  - ex2b
+  - ex2c
+
+- title: Exercise 3
+  docs:
+  - ex3a
+  - ex3b
+  - ex3c
+  - ex3d

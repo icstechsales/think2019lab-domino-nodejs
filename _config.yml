@@ -1,8 +1,8 @@
 # Site settings
-title: Think2019 Session 6051A
+title: Think2019 Session 6051
 email: dcacy@us.ibm.com
 description: >
-  Using Domino Query Language and Node.js—Domino Developers Edition!
+  Using Domino Query Language and Node.js — Domino Developers Edition!
 
 baseurl: "/think2019lab-domino-nodejs" # the subpath of your site, e.g. /blog/
 url: https://icstechsales.github.io/think2019lab-domino-nodejs # the base hostname & protocol for your site
@@ -28,7 +28,7 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
-timezone: Europe/Berlin
+timezone: America/Los Angeles
 defaults:
 - scope:
     path: _posts
