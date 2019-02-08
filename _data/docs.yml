@@ -1,8 +1,9 @@
 - title: Lab Content
   docs:
   - 01-lab-content
-  - 02-intro-to-appdev-pack
-  - 03-setup
+  - 02-using-the-image
+  - 03-intro-to-appdev-pack
+  - 04-setup
 
 - title: Exercise 1
   docs:
@@ -24,3 +25,9 @@
   - ex3b
   - ex3c
   - ex3d
+
+- title: Exercise 4
+  docs:
+  - ex4a
+  - ex4b
+  - ex4c

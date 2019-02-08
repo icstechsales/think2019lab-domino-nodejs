@@ -5,9 +5,9 @@ permalink: /docs/01-lab-content/
 
 In this lab, you'll be using a Windows 10 image (called in this documentation the "client image") which is fully configured to run the exercises in the lab.  Specifically, the image has the following products installed:
 
-- node.js, v10.15.1
-- The domino-db npm package, v1.1.0
-- The Atom text editor, v1.34.0
+- node.js v10.15.1
+- The domino-db npm package v1.1.0
+- The Atom text editor v1.34.0
 - Domino Designer, Domino Administrator, and IBM Notes, all v10.0.1
 
 The client image is available via a web browser. You'll be able to interact with the image as though it were a local desktop, but _only through the browser_. Do not try to use the actual computer in front of you; use the browser instead.

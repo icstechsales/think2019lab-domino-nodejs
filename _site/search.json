@@ -12,16 +12,24 @@
     
     
     {
-      "title": "Intro to the AppDev Pack",
-      "url": "/think2019lab-domino-nodejs/docs/02-intro-to-appdev-pack/"
+      "title": "Using the lab image",
+      "url": "/think2019lab-domino-nodejs/docs/02-using-the-image/"
 
     },
   
     
     
     {
-      "title": "Set up your environment",
-      "url": "/think2019lab-domino-nodejs/docs/03-setup/"
+      "title": "Intro to the AppDev Pack",
+      "url": "/think2019lab-domino-nodejs/docs/03-intro-to-appdev-pack/"
+
+    },
+  
+    
+    
+    {
+      "title": "Set up your node.js environment",
+      "url": "/think2019lab-domino-nodejs/docs/04-setup/"
 
     },
   
@@ -124,6 +132,32 @@
     {
       "title": "Step 3 - Explain the query",
       "url": "/think2019lab-domino-nodejs/docs/ex3d/"
+
+    },
+  
+
+  
+    
+    
+    {
+      "title": "LotusScript!",
+      "url": "/think2019lab-domino-nodejs/docs/ex4a/"
+
+    },
+  
+    
+    
+    {
+      "title": "Create an agent",
+      "url": "/think2019lab-domino-nodejs/docs/ex4b/"
+
+    },
+  
+    
+    
+    {
+      "title": "Test with Postman",
+      "url": "/think2019lab-domino-nodejs/docs/ex4c/"
 
     },
   

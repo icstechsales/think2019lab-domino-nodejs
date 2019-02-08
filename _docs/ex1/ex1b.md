@@ -20,7 +20,7 @@ Our application works, but it doesn't return much data we can use. Let's change 
     });
     ```
 
-    You can change the call to add fields you want returned. The domino-db API currently has no way to give you a list of what fields are available, so you'll need to use the Notes client to get those. Here are some of the fields in the document:
+    You can change the call to add fields you want returned. The domino-db API currently has no way to give you a list of what fields are available, so you'll need to use the Notes client to get those. You don't have to open the Notes client for this lab (although you are welcome to do so; the password is `passw0rd`). Here are some of the fields in the document:
 
     ![](../images/ex1b/doc-fields.jpg)
 
