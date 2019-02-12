@@ -40,4 +40,4 @@ Our application works, but it doesn't return much data we can use. Let's change 
 
     ![](../images/ex1b/results-with-fields.jpg)
 
-    Note that the `LastName` field is returned, even though we put the name all in lower case. **The API is not case sensitive** when it comes to the names of the fields, so `LastName` and `lastname` will both work, and the JSON which is returned will use the case you specify.
+    Note that data from the `LastName` field is returned, even though we put the name all in lower case. **The API is not case sensitive** when it comes to the names of the fields, so `LastName` and `lastname` will both work, and the JSON which is returned will use the case you specify.
