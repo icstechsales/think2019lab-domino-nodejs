@@ -1,6 +1,6 @@
 ---
 title: Test with Postman
-permalink: /docs/ex4c/
+permalink: /docs/ex5b/
 ---
 
 
