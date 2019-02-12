@@ -11,7 +11,7 @@ permalink: /docs/ex4c/
 
     ```
     http://dominoserver/dql/node-demo.nsf/exercise4
-    ```
+    ``` 
 
     Your page should look like this:
 
