@@ -39,7 +39,7 @@ Let's see what else we can do with DQL; specifically, we'll take a look at how t
     const query = " Form = 'AllTypes' and fldnumber > '500' ";
     ```
 
-    Run the program again with `node exercise4.js`. What results did you get? You should have had zero errors, and also zero documents.  The domino-db APIs do not tell you that your field datatype is wrong; they will complete silently and return results which may be confusing at first, until you understand the type of the fields in the Domino database.
+    Run the program again with `node exercise1d.js`. What results did you get? You should have had zero errors, and also zero documents.  The domino-db APIs do not tell you that your field datatype is wrong; they will complete silently and return results which may be confusing at first, until you understand the type of the fields in the Domino database.
 
 
 
