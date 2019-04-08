@@ -2,6 +2,9 @@
 title: The lab format
 permalink: /docs/01-lab-content/
 ---
+NOTE: This lab was originally designed to be used in the Think 2019 lab environment. You can use this lab in your own environment, however, by installing the `node-demo.nsf` database onto your own Domino server and adjusting the server names and URLs accordingly.
+
+<hr>
 
 In this lab, you'll be using a Windows 10 image (called in this documentation the "client image") which is fully configured to run the exercises in the lab.  Specifically, the image has the following products installed:
 
