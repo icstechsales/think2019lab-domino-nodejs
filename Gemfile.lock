@@ -70,10 +70,17 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
+<<<<<<< HEAD
   tzinfo-data
+=======
+>>>>>>> gh-pages
 
 RUBY VERSION
    ruby 2.3.7p456
 
 BUNDLED WITH
+<<<<<<< HEAD
    1.17.2
+=======
+   2.0.1
+>>>>>>> gh-pages

@@ -4,7 +4,11 @@ ruby RUBY_VERSION
 gem "jekyll", ">=3.4.3"
 
 # to use GitHub Pages
+<<<<<<< HEAD
 # gem "github-pages", group: :jekyll_plugins
+=======
+#gem "github-pages", group: :jekyll_plugins
+>>>>>>> gh-pages
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -15,4 +19,8 @@ group :jekyll_plugins do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+<<<<<<< HEAD
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+=======
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+>>>>>>> gh-pages

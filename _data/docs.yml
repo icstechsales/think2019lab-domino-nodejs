@@ -1,24 +1,32 @@
-- title: Programming Guide
+- title: Lab Content
   docs:
-  - fullDoc-Intro
-  - fullDoc-IntroNodeRed
-  - fullDoc-Details
-  - fullDoc-ConfigurationNode
-  - fullDoc-DocumentMgrNode
-  - fullDoc-GetDocumentsNode
-  - fullDoc-CreateDocumentsNode
-  - fullDoc-ReplaceDocumentsNode
-  - fullDoc-DeleteDocumentsNode
-  - fullDoc-ExplainQueryNode
-  - fullDoc-ErrorHandling
-  - fullDoc-TechnicalDetails
+  - 01-lab-content
+  - 02-using-the-image
+  - 03-intro-to-appdev-pack
+  - 04-setup
 
-- title: Launch Article
+- title: Exercise 1
   docs:
-  - article-Intro
-  - article-NodeRed
-  - article-sample
+  - ex1a
+  - ex1b
+  - ex1c
+  - ex1d
+  - ex1e
 
-- title: Environment Setup
+- title: Exercise 2
   docs:
-  - envSetup
+  - ex2a
+  - ex2b
+  - ex2c
+
+- title: Exercise 4
+  docs:
+  - ex4a
+  - ex4b
+  - ex4c
+
+- title: Exercise 5
+  docs:
+  - ex5a
+  - ex5b
+  - ex5c
